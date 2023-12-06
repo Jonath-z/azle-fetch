@@ -46,9 +46,19 @@ The function returns a Promise with the following structure:
 ### Examples
 
 ```javascript
-Copy code
-// TODO: Add examples
-Save to grepper
+  fetchGithubProfile: query([text], Result(text, text), async (username) => {
+    const { data, error } = await azleFetch<any>(
+      `https://api.github.com/users/${username}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json, charset=utf-8",
+        },
+        max_response_bytes: None,
+        cycles: 50_000_000n,
+        transform: "transform",
+      }
+    );
 ```
 
 ### License

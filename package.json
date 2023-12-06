@@ -1,0 +1,33 @@
+{
+  "name": "azle-fetch",
+  "version": "0.0.1",
+  "description": "Fetch library for ICP azle",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fetch",
+    "azle",
+    "azle-fetch",
+    "icp-fetch",
+    "icp"
+  ],
+  "author": "Jonathan Z.",
+  "license": "MIT",
+  "repository": "https://github.com/Jonath-z/azle-fetch",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "azle": "^0.18.6"
+  }
+}

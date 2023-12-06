@@ -1,0 +1,4 @@
+service: () -> {
+    fetchGithubProfile: (text) -> (variant {Ok:text; Err:text}) query;
+    transform: (record {context:vec nat8; response:record {status:nat; body:vec nat8; headers:vec record {value:text; name:text}}}) -> (record {status:nat; body:vec nat8; headers:vec record {value:text; name:text}}) query;
+}

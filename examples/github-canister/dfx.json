@@ -1,0 +1,11 @@
+{
+  "canisters": {
+    "github-canister": {
+      "type": "custom",
+      "main": "src/index.ts",
+      "build": "npx azle github-canister",
+      "candid": "src/index.did",
+      "wasm": ".azle/github-canister/github-canister.wasm"
+    }
+  }
+}

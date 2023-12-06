@@ -1,0 +1,13 @@
+node_modules
+
+# dfx temporary files
+.dfx/
+
+# generated files
+src/declarations/
+
+# frontend code
+node_modules/
+dist/
+.azle/
+.dfx/
